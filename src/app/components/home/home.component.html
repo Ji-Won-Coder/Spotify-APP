@@ -1,9 +1,16 @@
 
-<div class = "card-columns">
-    <div *ngFor="let cancion of nuevasCanciones" class="card" style="width: 18rem;">
-     <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+<div class = "col-md-4 ">
+    
+  <div *ngFor="let cancion of nuevasCanciones" class="card" style="width: 18rem;">
+    
+    <img [src]="cancion.images[0].url" class="card-img-top" alt="...">
+    
+     <div class="card-body">
+      <h4 class="card-title"> {{cancion.name}} </h4>
+    
+    <p class="card-text"><span *ngFor="let artista of cancion.artists" class="badge text-bg-dark">{{artista.name}} </span></p>
+    
     </div>
+    
+   </div>
 </div>

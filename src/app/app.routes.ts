@@ -5,8 +5,10 @@ import { SearchComponent } from './components/search/search.component';
 
 //REDIRECCIONES 
 export const ROUTES: Routes=[
-{path: 'home', component: HomeComponent},
-{path: 'search', component: SearchComponent},
-//esto redirecciona a home, cualquier path
-{path:'**', pathMatch:'full', redirectTo:'home'} 
+    {path: 'home', component: HomeComponent},
+    {path: 'search', component: SearchComponent},
+    {path:'', pathMatch:'full', redirectTo:'home'},
+
+    //esto redirecciona a home, cualquier path
+    {path:'**', pathMatch:'full', redirectTo:'home'} 
 ];

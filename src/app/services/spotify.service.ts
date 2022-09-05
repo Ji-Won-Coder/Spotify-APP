@@ -15,14 +15,21 @@ export class SpotifyService {
  getNewReleases (){
 
   const headers = new HttpHeaders({
-    'Authorization':'Bearer BQAOPEhYbretknbyVk4LHW1OwMArvRla8fES3J3XeHTXHBuIpWuXtCVGlwujfeWC7zXXvnCDimD6LHmP516eCA8eQcbDOtoBVPlfg03Fmw2DjCZ1rjs'
+    'Authorization':'Bearer BQBUTAxucdXGX_llhFswqF8VLW9oP4-ndAgNWUWQk80lmJ4ToZv1kVIbx-G8pIWUxxzT-Ukp2Ay2-7lRO9h8B6yRqb5aY3eZLfOD078onTpntrCp6PY'
   });
-   this.http.get('https://api.spotify.com/v1/browse/new-releases',{headers});
-   
+   return this.http.get('https://api.spotify.com/v1/browse/new-releases',{headers});
+  }
 
 
-   //PERO QUE MIERDA TAN COMPLICADA, #EMOCION
-
- }
-
+  getArtista(termino:string){
+  const headers = new HttpHeaders({
+    'Authorization':'Bearer BQBUTAxucdXGX_llhFswqF8VLW9oP4-ndAgNWUWQk80lmJ4ToZv1kVIbx-G8pIWUxxzT-Ukp2Ay2-7lRO9h8B6yRqb5aY3eZLfOD078onTpntrCp6PY'
+  });
+   return this.http.get(`https://api.spotify.com/v1/search?q=${termino}&type=artist&limit=20`,{headers});
+  }
+ 
 }
+
+
+
+
