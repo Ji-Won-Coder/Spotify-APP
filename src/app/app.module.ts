@@ -17,6 +17,9 @@ import { NabvarComponent } from './components/shered/nabvar/nabvar.component';
 //IMPORTAR RUTAS
 import {ROUTES} from './app.routes';
 
+//PIPES
+import { NoimagePipe } from './pipes/noimage.pipe';
+
 
 //SERVICIOS
 import { SpotifyService } from './services/spotify.service';
@@ -28,7 +31,9 @@ import { SpotifyService } from './services/spotify.service';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NabvarComponent
+    NabvarComponent,
+    NoimagePipe
+   
   ],
   imports: [
     BrowserModule,
