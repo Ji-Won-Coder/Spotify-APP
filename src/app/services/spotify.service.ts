@@ -15,12 +15,10 @@ export class SpotifyService {
  getNewReleases (){
 
   const headers = new HttpHeaders({
-    'Authorization':'Bearer BQC6DkpDxvRk8t2G_uvSV5gwGzaeAP98JM-JuDwfGV60e4OBqIhKoMlflru1wXNXtkbBrlDysdGkMebLftiVub1akbbgbvLuChHxioBejdpHDkIgpto'
+    'Authorization':'Bearer BQAOPEhYbretknbyVk4LHW1OwMArvRla8fES3J3XeHTXHBuIpWuXtCVGlwujfeWC7zXXvnCDimD6LHmP516eCA8eQcbDOtoBVPlfg03Fmw2DjCZ1rjs'
   });
-   this.http.get('https://api.spotify.com/v1/browse/new-releases',{headers})
-   .subscribe( data => {
-     console.log (data);
-   });
+   this.http.get('https://api.spotify.com/v1/browse/new-releases',{headers});
+   
 
 
    //PERO QUE MIERDA TAN COMPLICADA, #EMOCION
