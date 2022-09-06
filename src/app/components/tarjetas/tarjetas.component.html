@@ -1,0 +1,16 @@
+
+<div class = "card-colums m-4 animated fadeIn">
+    
+    <div *ngFor="let item of items" class="card" style="width: 18rem;">
+      
+      <img [src]="item.images |noimage" class="card-img-top" alt="...">
+      
+       <div class="card-body">
+        <h4 class="card-title"> {{item.name}} </h4>
+      
+      <p class="card-text"><span *ngFor="let artista of item.artists" class="badge text-bg-dark">{{artista.name}} </span></p>
+      
+      </div>
+      
+     </div>
+  </div>
