@@ -32,11 +32,11 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     AppComponent,
     HomeComponent,
     SearchComponent,
-    ArtistaComponent,
     NabvarComponent,
     NoimagePipe,
     TarjetasComponent,
-    LoadingComponent
+    LoadingComponent,
+    ArtistaComponent
    
   ],
   imports: [

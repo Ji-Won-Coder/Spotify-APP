@@ -18,13 +18,19 @@ export class HomeComponent {
   constructor(private spotify:SpotifyService) { 
 
     this.loading=true;
-
-  this.spotify.getNewReleases()
-  .subscribe( (data:any) => {
-    this.nuevasCanciones = data;
-    this.loading=false;
-    });
-  }
+    this.spotifyService();
  
+  }
+
+
+  public spotifyService(){
+    this.spotify.getNewReleases()
+    .subscribe( (data:any) => {
+      setTimeout(() => {
+        this.nuevasCanciones = data;
+        this.loading=false; 
+      }, 1000);      
+      });
+  }
  
 }

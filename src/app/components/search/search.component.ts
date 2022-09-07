@@ -25,7 +25,7 @@ export class SearchComponent {
 
     
     console.log(termino);
-    this.spotify.getArtista(termino).subscribe((data:album[]) =>{
+    this.spotify.getArtistas(termino).subscribe((data:album[]) =>{
       this.artistas = data
       const name = this.artistas.map( d => d.followers );
       console.log(name);
