@@ -19,6 +19,7 @@ import {ROUTES} from './app.routes';
 
 //PIPES
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 
 //SERVICIOS
@@ -36,7 +37,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     NoimagePipe,
     TarjetasComponent,
     LoadingComponent,
-    ArtistaComponent
+    ArtistaComponent,
+    DomseguroPipe
    
   ],
   imports: [

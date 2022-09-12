@@ -13,7 +13,7 @@
        </p>
     </div>
     <div class="col-4 ">
-            <button  routerLink="/search" class="btn btn-outline-summer" > Regresar</button>
+            <button  routerLink="/search" class="btn btn-outline-cyan" > Regresar</button>
     </div>
 </div>
 <div class="row">
@@ -37,7 +37,8 @@
                 <td>{{ track.album.name }}</td>
                 <td>{{ track.name }}</td>
                 <td>
-                    <audio [src]="track.preview_url" controls> </audio>
+                    <!-- <audio [src]="track.preview_url" controls> </audio> -->
+                    <iframe [src]=" track.uri | domseguro"  width="200" height="151" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </td>
             </tr>
         </tbody>
