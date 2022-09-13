@@ -1,7 +1,7 @@
 <app-loading *ngIf="loadingArtist"></app-loading>
 
 <div class="row" *ngIf="!loadingArtist">
-    <div class col-2>
+    <div class="col-2">
         <img  [src]="artista.images |noimage" class="img-thumbnail img-circle">
     </div>
     <div class="col">
@@ -16,8 +16,8 @@
             <button  routerLink="/search" class="btn btn-outline-cyan" > Regresar</button>
     </div>
 </div>
-<div class="row">
-    <div class="col-2">
+<div class="row m-5">
+    <div class="col">
         <div class="table">
         <thead>
             <tr>

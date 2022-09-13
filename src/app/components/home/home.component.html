@@ -1,9 +1,47 @@
-<app-loading  *ngIf="loading"></app-loading>
+<app-loading *ngIf="loading"></app-loading>
 
 <div *ngIf="error" alert="alert alert-danger animated fadeIn">
     <h3>Error</h3>
     <p> {{ mensajeError }}</p>
 </div>
+<app-tarjetas [items]="nuevasCanciones" ></app-tarjetas>
+<!--
+<div class="container">
+  
+    <div class="swiper">
+   
+         <div class="swiper-wrapper">
+           <div class="swiper-slide"><img src="assets/img/spotify.2.png" alt=""></div>
+           <div class="swiper-slide"><img src="assets/img/spotify.4.png" alt=""></div>
+           <div class="swiper-slide"><img src="assets/img/spotify.3.png" alt=""></div>
+         </div>
+  
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
-    <app-tarjetas [items]="nuevasCanciones"  ></app-tarjetas>
+    </div>
+
+</div>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      auroplay:{
+        delay:3000,
+        disableOnInteraction:false,
+      },
+
+      loop:true,
+
+       pagination: {
+         el: '.swiper-pagination',
+         Clickable:true,
+       },
+     
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+    });
+   </script>
+-->
 

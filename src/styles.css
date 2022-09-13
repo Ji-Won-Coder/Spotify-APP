@@ -3,6 +3,10 @@ body {
     background-color: black;
     color: white !important;
 }
+.raya{
+    color: aliceblue;
+    width: auto;
+}
 
 hr {
     border-color: white;
@@ -64,3 +68,7 @@ hr {
 .fadeIn {
     animation-name: fadeIn;
 }
+.card-columns{
+    flex-wrap: wrap;
+}
+

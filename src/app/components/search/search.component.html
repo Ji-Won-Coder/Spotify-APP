@@ -1,10 +1,9 @@
-<div class="row animated fadeIn">
-    <div class="col">
+<div class="row ">
+    <div class="col m-4">
 
-        <input #termino type="text"  (keyup)="buscar(termino.value)" class="forcontrol" placeholder="Buscar artista">
+        <input #termino type="text"  (keyup)="buscar(termino.value)" class="rounded-lg" placeholder="Buscar artista">
 
     </div>
 </div>
 <app-loading  class ="m-4" *ngIf="loading"></app-loading> 
-
-<app-tarjetas *ngIf ="! loading" [items]="artistas" ></app-tarjetas>
+<app-tarjetas *ngIf ="! loading" [items]="artistas"></app-tarjetas>

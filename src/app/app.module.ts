@@ -28,6 +28,7 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     TarjetasComponent,
     LoadingComponent,
     ArtistaComponent,
-    DomseguroPipe
+    DomseguroPipe,
+   
    
   ],
   imports: [
